@@ -39,6 +39,14 @@
     #schedule { scroll-margin-top: 120px; }
     @media (max-width: 768px) { #schedule { scroll-margin-top: 140px; } }
   </style>
+
+<style id="ft-mega-fallback">
+  .group:hover .group-hover\:visible{visibility:visible!important}
+  .group:hover .group-hover\:opacity-100{opacity:1!important}
+  .shadow-soft{box-shadow:0 10px 30px rgba(10,46,92,.12)}
+  .border-slate-200{border-color:#e2e8f0}
+</style>
+
 </head><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -77,6 +85,14 @@
     #schedule { scroll-margin-top: 120px; }
     @media (max-width: 768px) { #schedule { scroll-margin-top: 140px; } }
   </style>
+
+<style id="ft-mega-fallback">
+  .group:hover .group-hover\:visible{visibility:visible!important}
+  .group:hover .group-hover\:opacity-100{opacity:1!important}
+  .shadow-soft{box-shadow:0 10px 30px rgba(10,46,92,.12)}
+  .border-slate-200{border-color:#e2e8f0}
+</style>
+
 </head><body class="font-[Inter] text-slate-800">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bg-brand-blue text-white text-xs">
@@ -93,22 +109,54 @@
 <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
     <a href="../../index.html" class="flex items-center gap-3">
-      <img src="../../assets/flowtechlogo.png" alt="Flow Tech Logo" class="w-10 h-10"/>
+      <img src="../../assets/flowtechlogo-transparent.png" class="h-10 w-auto object-contain" alt="Flow Tech Logo">
       <div>
         <div class="text-xl font-extrabold tracking-tight text-brand-blue">Flow Tech</div>
         <div class="text-xs uppercase tracking-wide text-slate-500">Heating • AC • Electric</div>
       </div>
     </a>
+    
     <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
-      <a href="../../services.html" class="hover:text-brand-blue">Services</a>
-      <a href="../../service-areas.html" class="hover:text-brand-blue">Locations</a>
-      <a href="../../about.html" class="hover:text-brand-blue">Why Us</a>
-      <a href="../../specials.html" class="hover:text-brand-blue">Specials</a>
+      <div class="relative group">
+        <a href="../../index.html#services" class="hover:text-brand-blue">Services</a>
+        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-200 absolute left-0 mt-3 w-[780px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-3 gap-6 z-50">
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../heating.html">Heating</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../heating.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="../../heating.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="../../heating.html#maintenance" class="hover:underline">Maintenance</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../ac.html">Air Conditioning</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../ac.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="../../ac.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="../../ac.html#maintenance" class="hover:underline">Maintenance</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../electrical.html">Electrical</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../electrical.html#panels" class="hover:underline">Panel Upgrades</a></li>
+              <li><a href="../../electrical.html#lighting" class="hover:underline">Lighting & Circuits</a></li>
+              <li><a href="../../electrical.html#ev" class="hover:underline">EV Chargers</a></li>
+              <li><a href="../../electrical.html#surge" class="hover:underline">Surge Protection</a></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="../../service-areas.html" class="hover:text-brand-blue">Service Areas</a>
       <a href="../../financing.html" class="hover:text-brand-blue">Financing</a>
       <a href="../../about.html" class="hover:text-brand-blue">About</a>
-      <a href="../../contact.html" class="hover:text-brand-blue">Contact</a>
+      <a href="../../reviews.html" class="hover:text-brand-blue">Reviews</a>
+      <a href="../../careers.html" class="hover:text-brand-blue">Careers</a>
       <a href="../../blog/index.html" class="hover:text-brand-blue">Blog</a>
+      <a href="../../contact.html" class="hover:text-brand-blue">Contact</a>
     </nav>
+    
     <div class="flex items-center gap-2">
       <a href="../../index.html#schedule" class="hidden md:inline-flex bg-brand-orange text-white rounded-lg px-4 py-2.5 font-semibold shadow hover:bg-brand-orangeDark transition">Book Online</a>
       <button id="menuBtn" aria-controls="mobileMenu" aria-expanded="false"
@@ -121,7 +169,48 @@
     </div>
   </div>
   <div id="mobileMenu" class="lg:hidden hidden border-t border-slate-200 bg-white">
-    <nav class="px-4 py-3 grid gap-3 text-sm font-medium"></nav>
+    
+    <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+      <div class="relative group">
+        <a href="../../index.html#services" class="hover:text-brand-blue">Services</a>
+        <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-200 absolute left-0 mt-3 w-[780px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-3 gap-6 z-50">
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../heating.html">Heating</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../heating.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="../../heating.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="../../heating.html#maintenance" class="hover:underline">Maintenance</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../ac.html">Air Conditioning</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../ac.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="../../ac.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="../../ac.html#maintenance" class="hover:underline">Maintenance</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="block font-semibold text-brand-blue" href="../../electrical.html">Electrical</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="../../electrical.html#panels" class="hover:underline">Panel Upgrades</a></li>
+              <li><a href="../../electrical.html#lighting" class="hover:underline">Lighting & Circuits</a></li>
+              <li><a href="../../electrical.html#ev" class="hover:underline">EV Chargers</a></li>
+              <li><a href="../../electrical.html#surge" class="hover:underline">Surge Protection</a></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="../../service-areas.html" class="hover:text-brand-blue">Service Areas</a>
+      <a href="../../financing.html" class="hover:text-brand-blue">Financing</a>
+      <a href="../../about.html" class="hover:text-brand-blue">About</a>
+      <a href="../../reviews.html" class="hover:text-brand-blue">Reviews</a>
+      <a href="../../careers.html" class="hover:text-brand-blue">Careers</a>
+      <a href="../../blog/index.html" class="hover:text-brand-blue">Blog</a>
+      <a href="../../contact.html" class="hover:text-brand-blue">Contact</a>
+    </nav>
+    
   </div>
 </header>
 

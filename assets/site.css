@@ -1,13 +1,37 @@
 
-/* Aspect ratio helpers (works without Tailwind plugin) */
+/* Aspect ratio helpers */
 .ratio-4-5 { aspect-ratio: 4 / 5; }
 .ratio-16-9 { aspect-ratio: 16 / 9; }
 .object-cover { object-fit: cover; }
+.w-full { width: 100%; }
 
-/* Mega menu visual hierarchy */
+/* Global image normalization */
+.hero img,
+.section-hero img,
+.service-card img,
+.blog-card img,
+article .content img,
+.gallery img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+/* Portraits */
+.team img,
+.portrait,
+.testimonial img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  width: 200px;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+/* Mega menu hierarchy and active nav */
 .ft-mega h5 { font-size: 0.95rem; font-weight: 700; color: #0A2E5C; }
 .ft-mega a.sub { font-size: 0.9rem; color: #475569; display: block; margin: 0.25rem 0; }
 .ft-mega a.sub:hover { text-decoration: underline; }
-
-/* Active nav state */
 .ft-nav a.active { color: #FF6A13; font-weight: 700; }

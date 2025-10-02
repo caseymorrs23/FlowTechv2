@@ -8,18 +8,14 @@
   <meta name="description" content="Panels, lighting, EV chargers, and surge protection." />
   <meta name="robots" content="index, follow" />
   <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/site.css">
   <meta property="og:title" content="Electrical Services | Flow Tech">
   <meta property="og:description" content="Panels, lighting, EV chargers, and surge protection.">
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:url" content="https://caseymorrs23.github.io/FlowTechv2/electrical.html">
-  <!-- Google Analytics (replace G-XXXXXXXXXX) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
-  <!-- Google Tag Manager (replace GTM-XXXXXXX) -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{brand:{orange:'#FF6A13',blue:'#0A2E5C',blueLight:'#1C4E8E'}},boxShadow:{soft:'0 10px 30px rgba(10,46,92,.12)'}}}};</script>
-  <style>body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter}</style>
+  <script defer src="assets/site.js"></script>
 </head>
 <body class="text-slate-800">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -36,7 +32,7 @@
 </div>
 
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-6 ft-nav">
     <a href="index.html" class="flex items-center gap-3">
       <img src="assets/flowtechlogo.jpg" alt="Flow Tech" class="w-10 h-10 object-contain rounded-full bg-white"/>
       <div>
@@ -47,53 +43,46 @@
 
     <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
       <div class="relative" data-ft-services-trigger>
-        <button class="hover:text-brand-blue">Services</button>
-        <div class="invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[1000px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-4 gap-6 z-50" data-ft-services-panel>
+        <a href="index.html#services" data-ft-services-btn class="hover:text-brand-blue">Services</a>
+        <div class="ft-mega invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[1000px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-4 gap-6 z-50" data-ft-services-panel>
           <div>
-            <a class="block font-semibold text-brand-blue" href="heating.html">Heating</a>
-            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
-              <li><a href="heating.html#repair" class="hover:underline">Repair</a></li>
-              <li><a href="heating.html#install" class="hover:underline">Install/Replace</a></li>
-              <li><a href="heating.html#maintenance" class="hover:underline">Maintenance</a></li>
-              <li><a href="heating.html#duct-repair" class="hover:underline">Duct Repair & Design</a></li>
-            </ul>
+            <h5><a href="heating.html">Heating</a></h5>
+            <a href="heating.html#repair" class="sub">Repair</a>
+            <a href="heating.html#install" class="sub">Install/Replace</a>
+            <a href="heating.html#maintenance" class="sub">Maintenance</a>
+            <a href="heating.html#duct-repair" class="sub">Duct Repair & Design</a>
           </div>
           <div>
-            <a class="block font-semibold text-brand-blue" href="ac.html">Air Conditioning</a>
-            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
-              <li><a href="ac.html#repair" class="hover:underline">Repair</a></li>
-              <li><a href="ac.html#install" class="hover:underline">Install/Replace</a></li>
-              <li><a href="ac.html#maintenance" class="hover:underline">Maintenance</a></li>
-              <li><a href="ac.html#ductless" class="hover:underline">Ductless (Mini‑Splits)</a></li>
-            </ul>
+            <h5><a href="ac.html">Air Conditioning</a></h5>
+            <a href="ac.html#repair" class="sub">Repair</a>
+            <a href="ac.html#install" class="sub">Install/Replace</a>
+            <a href="ac.html#maintenance" class="sub">Maintenance</a>
+            <a href="ac.html#ductless" class="sub">Ductless (Mini‑Splits)</a>
           </div>
           <div>
-            <a class="block font-semibold text-brand-blue" href="electrical.html">Electrical</a>
-            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
-              <li><a href="electrical.html#panels" class="hover:underline">Panel Upgrades</a></li>
-              <li><a href="electrical.html#lighting" class="hover:underline">Lighting & Circuits</a></li>
-              <li><a href="electrical.html#ev" class="hover:underline">EV Chargers</a></li>
-              <li><a href="electrical.html#surge" class="hover:underline">Surge Protection</a></li>
-            </ul>
+            <h5><a href="electrical.html">Electrical</a></h5>
+            <a href="electrical.html#panels" class="sub">Panel Upgrades</a>
+            <a href="electrical.html#lighting" class="sub">Lighting & Circuits</</a>
+            <a href="electrical.html#ev" class="sub">EV Chargers</a>
+            <a href="electrical.html#surge" class="sub">Surge Protection</a>
           </div>
           <div>
-            <a class="block font-semibold text-brand-blue" href="generators.html">Generators</a>
-            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
-              <li><a href="generators.html#repair" class="hover:underline">Repair</a></li>
-              <li><a href="generators.html#install" class="hover:underline">Install/Replace</a></li>
-              <li><a href="generators.html#maintenance" class="hover:underline">Maintenance</a></li>
-              <li><a href="generators.html#tune-up" class="hover:underline">Tune‑Up</a></li>
-              <li><a href="generators.html#inspections" class="hover:underline">Inspections</a></li>
-            </ul>
+            <h5><a href="generators.html">Generators</a></h5>
+            <a href="generators.html#repair" class="sub">Repair</a>
+            <a href="generators.html#install" class="sub">Install/Replace</a>
+            <a href="generators.html#maintenance" class="sub">Maintenance</a>
+            <a href="generators.html#tune-up" class="sub">Tune‑Up</a>
+            <a href="generators.html#inspections" class="sub">Inspections</a>
           </div>
         </div>
       </div>
-      <a class="hover:text-brand-blue" href="service-areas.html">Service Areas</a>
-      <a class="hover:text-brand-blue" href="financing.html">Financing</a>
-      <a class="hover:text-brand-blue" href="about.html">About</a>
-      <a class="hover:text-brand-blue" href="reviews.html">Reviews</a>
-      <a class="hover:text-brand-blue" href="blog/index.html">Blog</a>
-      <a class="hover:text-brand-blue" href="contact.html">Contact</a>
+      <a href="service-areas.html" class="hover:text-brand-blue">Service Areas</a>
+      <a href="financing.html" class="hover:text-brand-blue">Financing</a>
+      <a href="about.html" class="hover:text-brand-blue">About</a>
+      <a href="reviews.html" class="hover:text-brand-blue">Reviews</a>
+      <a href="blog/index.html" class="hover:text-brand-blue">Blog</a>
+      <a href="contact.html" class="hover:text-brand-blue">Contact</a>
+      <a href="specials.html" class="hover:text-brand-blue">Specials</a>
     </nav>
 
     <button class="lg:hidden inline-flex items-center gap-2 px-3 py-2 rounded-md border border-slate-300" aria-label="Open menu" data-ft-burger>
@@ -117,33 +106,20 @@
       <a class="block py-2" href="reviews.html">Reviews</a>
       <a class="block py-2" href="blog/index.html">Blog</a>
       <a class="block py-2" href="contact.html">Contact</a>
+      <a class="block py-2" href="specials.html">Specials</a>
     </div>
   </div>
 </header>
 
 <main class="max-w-7xl mx-auto px-4 py-12">
   <h1 class="text-3xl font-extrabold text-brand-blue">Electrical</h1>
-  <div class="grid md:grid-cols-2 gap-8 mt-6">
-    <section id="panels"><h2 class="text-xl font-bold">Panel Upgrades</h2><img src="assets/professional/electrical-panel-open.webp" class="rounded-lg mt-2" alt="Electrical panel open"></section>
-    <section id="lighting"><h2 class="text-xl font-bold">Lighting & Circuits</h2><img src="assets/professional/electrical-panel-close.webp" class="rounded-lg mt-2" alt="Electrical panel close"></section>
+  <img src="assets/img/services/electrical_panels.webp" class="ratio-16-9 object-cover w-full rounded-xl shadow-soft mt-4" alt="Electrical hero">
+  <div class="grid md:grid-cols-2 gap-8 mt-8">
+    <section id="panels"><h2 class="text-xl font-bold">Panel Upgrades</h2><p>Modern panels sized for today’s loads, installed to code.</p></section>
+    <section id="lighting"><h2 class="text-xl font-bold">Lighting & Circuits</h2><p>From kitchen lighting to dedicated circuits—clean, safe work.</p></section>
     <section id="ev"><h2 class="text-xl font-bold">EV Chargers</h2><p>Level 2 chargers installed to code with clean workmanship.</p></section>
     <section id="surge"><h2 class="text-xl font-bold">Surge Protection</h2><p>Whole-home surge protection for appliances and electronics.</p></section>
   </div>
-  
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "serviceType":"Electrical",
-  "provider":{"@type":"HVACBusiness","name":"Flow Tech Heating, AC & Electric","areaServed":"Pierce & South King County"},
-  "areaServed":[
-    "Eatonville","Bonney Lake","Enumclaw","Buckley","Orting","Graham","Spanaway","South Hill","Puyallup","Sumner","Tacoma",
-    "Maple Valley","Covington","Kent","Auburn","Federal Way","Black Diamond","Roy","Yelm","Cle Elum","Ashford","Elbe","Mineral",
-    "Morton","Packwood","Randle"
-  ],
-  "url":"https://caseymorrs23.github.io/FlowTechv2/electrical.html"
-}
-</script>
 </main>
 
 <footer class="bg-slate-900 text-slate-200 mt-16">
@@ -192,21 +168,4 @@
     </div>
   </div>
 </footer>
-
-<script id="ft-mega-js">
-(function(){
-  const trigger=document.querySelector("[data-ft-services-trigger]");
-  const panel=document.querySelector("[data-ft-services-panel]");
-  const burger=document.querySelector("[data-ft-burger]")||document.querySelector("button.lg\:hidden");
-  const mobile=document.querySelector("[data-ft-mobile]");
-  const mobileServices=document.querySelector("[data-ft-mobile-services]");
-  const mobileServicesPanel=document.querySelector("[data-ft-mobile-services-panel]");
-  function openP(){if(panel){panel.classList.add("visible","opacity-100");panel.classList.remove("invisible","opacity-0");}}
-  function closeP(){if(panel){panel.classList.remove("visible","opacity-100");panel.classList.add("invisible","opacity-0");}}
-  if(trigger&&panel){trigger.addEventListener("mouseenter",openP);trigger.addEventListener("focus",openP);panel.addEventListener("mouseenter",openP);trigger.addEventListener("mouseleave",()=>setTimeout(()=>{if(!panel.matches(":hover"))closeP();},120));panel.addEventListener("mouseleave",()=>setTimeout(()=>{if(!trigger.matches(":hover"))closeP();},120));document.addEventListener("keydown",(e)=>{if(e.key==="Escape")closeP();});}
-  if(burger&&mobile){burger.addEventListener("click",()=>mobile.classList.toggle("hidden"));}
-  if(mobileServices&&mobileServicesPanel){mobileServices.addEventListener("click",()=>mobileServicesPanel.classList.toggle("hidden"));}
-  const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
-})();
-</script>
 </body></html>

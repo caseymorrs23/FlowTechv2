@@ -1,0 +1,13 @@
+
+/* Aspect ratio helpers (works without Tailwind plugin) */
+.ratio-4-5 { aspect-ratio: 4 / 5; }
+.ratio-16-9 { aspect-ratio: 16 / 9; }
+.object-cover { object-fit: cover; }
+
+/* Mega menu visual hierarchy */
+.ft-mega h5 { font-size: 0.95rem; font-weight: 700; color: #0A2E5C; }
+.ft-mega a.sub { font-size: 0.9rem; color: #475569; display: block; margin: 0.25rem 0; }
+.ft-mega a.sub:hover { text-decoration: underline; }
+
+/* Active nav state */
+.ft-nav a.active { color: #FF6A13; font-weight: 700; }

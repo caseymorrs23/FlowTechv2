@@ -31,7 +31,7 @@
 </div>
 
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-6 ft-nav">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
     <a href="index.html" class="flex items-center gap-3">
       <img src="assets/flowtechlogo.jpg" alt="Flow Tech" class="w-10 h-10 object-contain rounded-full bg-white"/>
       <div>
@@ -42,46 +42,53 @@
 
     <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
       <div class="relative" data-ft-services-trigger>
-        <a href="index.html#services" data-ft-services-btn class="hover:text-brand-blue">Services</a>
-        <div class="ft-mega invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[1000px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-4 gap-6 z-50" data-ft-services-panel>
+        <button class="hover:text-brand-blue">Services</button>
+        <div class="invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[1000px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-4 gap-6 z-50" data-ft-services-panel>
           <div>
-            <h5><a href="heating.html">Heating</a></h5>
-            <a href="heating.html#repair" class="sub">Repair</a>
-            <a href="heating.html#install" class="sub">Install/Replace</a>
-            <a href="heating.html#maintenance" class="sub">Maintenance</a>
-            <a href="heating.html#duct-repair" class="sub">Duct Repair & Design</a>
+            <a class="block font-semibold text-brand-blue" href="heating.html">Heating</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="heating.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="heating.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="heating.html#maintenance" class="hover:underline">Maintenance</a></li>
+              <li><a href="heating.html#duct-repair" class="hover:underline">Duct Repair & Design</a></li>
+            </ul>
           </div>
           <div>
-            <h5><a href="ac.html">Air Conditioning</a></h5>
-            <a href="ac.html#repair" class="sub">Repair</a>
-            <a href="ac.html#install" class="sub">Install/Replace</a>
-            <a href="ac.html#maintenance" class="sub">Maintenance</a>
-            <a href="ac.html#ductless" class="sub">Ductless (Mini‑Splits)</a>
+            <a class="block font-semibold text-brand-blue" href="ac.html">Air Conditioning</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="ac.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="ac.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="ac.html#maintenance" class="hover:underline">Maintenance</a></li>
+              <li><a href="ac.html#ductless" class="hover:underline">Ductless (Mini‑Splits)</a></li>
+            </ul>
           </div>
           <div>
-            <h5><a href="electrical.html">Electrical</a></h5>
-            <a href="electrical.html#panels" class="sub">Panel Upgrades</a>
-            <a href="electrical.html#lighting" class="sub">Lighting & Circuits</a>
-            <a href="electrical.html#ev" class="sub">EV Chargers</a>
-            <a href="electrical.html#surge" class="sub">Surge Protection</a>
+            <a class="block font-semibold text-brand-blue" href="electrical.html">Electrical</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="electrical.html#panels" class="hover:underline">Panel Upgrades</a></li>
+              <li><a href="electrical.html#lighting" class="hover:underline">Lighting & Circuits</a></li>
+              <li><a href="electrical.html#ev" class="hover:underline">EV Chargers</a></li>
+              <li><a href="electrical.html#surge" class="hover:underline">Surge Protection</a></li>
+            </ul>
           </div>
           <div>
-            <h5><a href="generators.html">Generators</a></h5>
-            <a href="generators.html#repair" class="sub">Repair</a>
-            <a href="generators.html#install" class="sub">Install/Replace</a>
-            <a href="generators.html#maintenance" class="sub">Maintenance</a>
-            <a href="generators.html#tune-up" class="sub">Tune‑Up</a>
-            <a href="generators.html#inspections" class="sub">Inspections</a>
+            <a class="block font-semibold text-brand-blue" href="generators.html">Generators</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="generators.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="generators.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="generators.html#maintenance" class="hover:underline">Maintenance</a></li>
+              <li><a href="generators.html#tune-up" class="hover:underline">Tune‑Up</a></li>
+              <li><a href="generators.html#inspections" class="hover:underline">Inspections</a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <a href="service-areas.html" class="hover:text-brand-blue">Service Areas</a>
-      <a href="financing.html" class="hover:text-brand-blue">Financing</a>
-      <a href="about.html" class="hover:text-brand-blue">About</a>
-      <a href="reviews.html" class="hover:text-brand-blue">Reviews</a>
-      <a href="blog/index.html" class="hover:text-brand-blue">Blog</a>
-      <a href="contact.html" class="hover:text-brand-blue">Contact</a>
-      <a href="specials.html" class="hover:text-brand-blue">Specials</a>
+      <a class="hover:text-brand-blue" href="service-areas.html">Service Areas</a>
+      <a class="hover:text-brand-blue" href="financing.html">Financing</a>
+      <a class="hover:text-brand-blue" href="about.html">About</a>
+      <a class="hover:text-brand-blue" href="reviews.html">Reviews</a>
+      <a class="hover:text-brand-blue" href="blog/index.html">Blog</a>
+      <a class="hover:text-brand-blue" href="contact.html">Contact</a>
     </nav>
 
     <button class="lg:hidden inline-flex items-center gap-2 px-3 py-2 rounded-md border border-slate-300" aria-label="Open menu" data-ft-burger>
@@ -105,7 +112,6 @@
       <a class="block py-2" href="reviews.html">Reviews</a>
       <a class="block py-2" href="blog/index.html">Blog</a>
       <a class="block py-2" href="contact.html">Contact</a>
-      <a class="block py-2" href="specials.html">Specials</a>
     </div>
   </div>
 </header>

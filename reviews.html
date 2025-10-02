@@ -3,27 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Flow Tech Heating, AC & Electric</title>
-  <meta name="description" content="Expert Heating, Air Conditioning & Electrical services in Pierce & South King County." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/flowtechlogo.jpg">
+  <base href="https://caseymorrs23.github.io/FlowTechv2/">
+  <title>Reviews | Flow Tech</title>
+  <meta name="description" content="Read reviews from homeowners and see photos of recent work." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="assets/favicon.ico">
+  <meta property="og:title" content="Reviews | Flow Tech">
+  <meta property="og:description" content="Read reviews from homeowners and see photos of recent work.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://caseymorrs23.github.io/FlowTechv2/reviews.html">
+  <!-- Google Analytics (replace G-XXXXXXXXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <!-- Google Tag Manager (replace GTM-XXXXXXX) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { brand: { orange: '#FF6A13', blue: '#0A2E5C', blueLight:'#1C4E8E' } },
-          boxShadow: { soft:'0 10px 30px rgba(10,46,92,.12)' }
-        }
-      }
-    }
-  </script>
-  <style> body{font-family:Inter,ui-sans-serif,system-ui} </style>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{orange:'#FF6A13',blue:'#0A2E5C',blueLight:'#1C4E8E'}},boxShadow:{soft:'0 10px 30px rgba(10,46,92,.12)'}}}};</script>
+  <style>body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter}</style>
 </head>
 <body class="text-slate-800">
-
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bg-[#252a52] text-white text-xs">
   <div class="max-w-7xl mx-auto px-4 py-2 flex items-center gap-6 justify-between">
     <div>Licensed • Bonded • Insured • WA Lic. <strong>FLOWTTH750BT</strong> • WA Lic. <strong>FLOWTTH751N7</strong></div>
@@ -46,11 +45,10 @@
       </div>
     </a>
 
-    <!-- Desktop nav + mobile burger -->
     <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
       <div class="relative" data-ft-services-trigger>
         <button class="hover:text-brand-blue">Services</button>
-        <div class="invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[820px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-3 gap-6 z-50" data-ft-services-panel>
+        <div class="invisible opacity-0 transition duration-150 absolute left-0 mt-3 w-[1000px] rounded-xl border border-slate-200 bg-white shadow-soft p-6 grid grid-cols-4 gap-6 z-50" data-ft-services-panel>
           <div>
             <a class="block font-semibold text-brand-blue" href="heating.html">Heating</a>
             <ul class="mt-2 space-y-2 text-slate-700 text-sm">
@@ -76,7 +74,16 @@
               <li><a href="electrical.html#lighting" class="hover:underline">Lighting & Circuits</a></li>
               <li><a href="electrical.html#ev" class="hover:underline">EV Chargers</a></li>
               <li><a href="electrical.html#surge" class="hover:underline">Surge Protection</a></li>
-              <li><a href="electrical.html#generators" class="hover:underline font-semibold text-brand-blue">Generators</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="block font-semibold text-brand-blue" href="generators.html">Generators</a>
+            <ul class="mt-2 space-y-2 text-slate-700 text-sm">
+              <li><a href="generators.html#repair" class="hover:underline">Repair</a></li>
+              <li><a href="generators.html#install" class="hover:underline">Install/Replace</a></li>
+              <li><a href="generators.html#maintenance" class="hover:underline">Maintenance</a></li>
+              <li><a href="generators.html#tune-up" class="hover:underline">Tune‑Up</a></li>
+              <li><a href="generators.html#inspections" class="hover:underline">Inspections</a></li>
             </ul>
           </div>
         </div>
@@ -95,7 +102,6 @@
     </button>
   </div>
 
-  <!-- Mobile panel -->
   <div class="lg:hidden hidden border-t border-slate-200" data-ft-mobile>
     <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
       <button class="w-full text-left py-2 font-semibold" data-ft-mobile-services>Services ▾</button>
@@ -103,7 +109,7 @@
         <a class="block py-1" href="heating.html">Heating</a>
         <a class="block py-1" href="ac.html">Air Conditioning</a>
         <a class="block py-1" href="electrical.html">Electrical</a>
-        <a class="block py-1" href="electrical.html#generators">Generators</a>
+        <a class="block py-1" href="generators.html">Generators</a>
       </div>
       <a class="block py-2" href="service-areas.html">Service Areas</a>
       <a class="block py-2" href="financing.html">Financing</a>
@@ -116,9 +122,32 @@
 </header>
 
 <main class="max-w-7xl mx-auto px-4 py-12">
-  <h1 class="text-3xl font-extrabold text-brand-blue">Reviews</h1>
-  <p class="mt-2">Read and leave reviews on our Google Business Profile.</p>
+  <h1 class="text-3xl font-extrabold text-brand-blue">Customer Reviews</h1>
+  <p class="mt-2">Real homeowners. Real results. Read more or leave yours on our Google Business Profile.</p>
   <a href="https://maps.app.goo.gl/uMXLJvKZsd3L8C3J7" target="_blank" class="inline-block mt-4 bg-brand-orange text-white font-semibold px-4 py-2 rounded-lg shadow-soft">View on Google & Leave a Review</a>
+
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    <div class="bg-white rounded-xl border p-6 shadow-soft">
+      <div class="flex items-center gap-2 text-amber-400">★★★★★</div>
+      <p class="mt-3 italic">“They diagnosed our furnace fast and had heat back the same day. Friendly, clean, and fairly priced.”</p>
+      <div class="mt-3 text-sm text-slate-500">— Sarah P., Puyallup</div>
+    </div>
+    <div class="bg-white rounded-xl border p-6 shadow-soft">
+      <div class="flex items-center gap-2 text-amber-400">★★★★★</div>
+      <p class="mt-3 italic">“New panel upgrade looks great and passed inspection with zero issues. Highly recommend.”</p>
+      <div class="mt-3 text-sm text-slate-500">— Marcus D., Graham</div>
+    </div>
+    <div class="bg-white rounded-xl border p-6 shadow-soft">
+      <div class="flex items-center gap-2 text-amber-400">★★★★★</div>
+      <p class="mt-3 italic">“Our AC install was tidy and the team explained everything clearly. A+ experience.”</p>
+      <div class="mt-3 text-sm text-slate-500">— Kim R., Bonney Lake</div>
+    </div>
+    <div class="bg-white rounded-xl border p-6 shadow-soft">
+      <div class="flex items-center gap-2 text-amber-400">★★★★★</div>
+      <p class="mt-3 italic">“Generator tune‑up and Mobile Link setup—now we get alerts and feel prepared for outages.”</p>
+      <div class="mt-3 text-sm text-slate-500">— Jeff H., Enumclaw</div>
+    </div>
+  </div>
 </main>
 
 <footer class="bg-slate-900 text-slate-200 mt-16">
@@ -140,7 +169,7 @@
         <li><a href="heating.html" class="hover:underline">Heating</a></li>
         <li><a href="ac.html" class="hover:underline">Air Conditioning</a></li>
         <li><a href="electrical.html" class="hover:underline">Electrical</a></li>
-        <li><a href="electrical.html#generators" class="hover:underline">Generators</a></li>
+        <li><a href="generators.html" class="hover:underline">Generators</a></li>
       </ul>
     </div>
     <div>
@@ -170,29 +199,18 @@
 
 <script id="ft-mega-js">
 (function(){
-  const trigger = document.querySelector("[data-ft-services-trigger]");
-  const panel = document.querySelector("[data-ft-services-panel]");
-  const burger = document.querySelector("[data-ft-burger]");
-  const mobile = document.querySelector("[data-ft-mobile]");
-  const mobileServices = document.querySelector("[data-ft-mobile-services]");
-  const mobileServicesPanel = document.querySelector("[data-ft-mobile-services-panel]");
-
-  function openPanel(){ if(panel){ panel.classList.add("visible","opacity-100"); panel.classList.remove("invisible","opacity-0"); }}
-  function closePanel(){ if(panel){ panel.classList.remove("visible","opacity-100"); panel.classList.add("invisible","opacity-0"); }}
-
-  if (trigger && panel) {
-    trigger.addEventListener("mouseenter", openPanel);
-    trigger.addEventListener("focus", openPanel);
-    panel.addEventListener("mouseenter", openPanel);
-    trigger.addEventListener("mouseleave", ()=> setTimeout(()=>{ if(!panel.matches(":hover")) closePanel(); }, 120));
-    panel.addEventListener("mouseleave", ()=> setTimeout(()=>{ if(!trigger.matches(":hover")) closePanel(); }, 120));
-    document.addEventListener("keydown", (e)=>{ if(e.key==="Escape") closePanel(); });
-  }
-
-  if (burger && mobile) { burger.addEventListener("click", ()=> mobile.classList.toggle("hidden")); }
-  if (mobileServices && mobileServicesPanel) { mobileServices.addEventListener("click", ()=> mobileServicesPanel.classList.toggle("hidden")); }
-
-  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+  const trigger=document.querySelector("[data-ft-services-trigger]");
+  const panel=document.querySelector("[data-ft-services-panel]");
+  const burger=document.querySelector("[data-ft-burger]")||document.querySelector("button.lg\:hidden");
+  const mobile=document.querySelector("[data-ft-mobile]");
+  const mobileServices=document.querySelector("[data-ft-mobile-services]");
+  const mobileServicesPanel=document.querySelector("[data-ft-mobile-services-panel]");
+  function openP(){if(panel){panel.classList.add("visible","opacity-100");panel.classList.remove("invisible","opacity-0");}}
+  function closeP(){if(panel){panel.classList.remove("visible","opacity-100");panel.classList.add("invisible","opacity-0");}}
+  if(trigger&&panel){trigger.addEventListener("mouseenter",openP);trigger.addEventListener("focus",openP);panel.addEventListener("mouseenter",openP);trigger.addEventListener("mouseleave",()=>setTimeout(()=>{if(!panel.matches(":hover"))closeP();},120));panel.addEventListener("mouseleave",()=>setTimeout(()=>{if(!trigger.matches(":hover"))closeP();},120));document.addEventListener("keydown",(e)=>{if(e.key==="Escape")closeP();});}
+  if(burger&&mobile){burger.addEventListener("click",()=>mobile.classList.toggle("hidden"));}
+  if(mobileServices&&mobileServicesPanel){mobileServices.addEventListener("click",()=>mobileServicesPanel.classList.toggle("hidden"));}
+  const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
 })();
 </script>
 </body></html>
